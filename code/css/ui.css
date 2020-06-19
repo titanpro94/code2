@@ -1,0 +1,172 @@
+/* 
+Credits UI: 
+https://dribbble.com/shots/6838244-Health-App-UI-Design
+*/
+@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
+body{
+  font-family:work sans;
+
+}
+.containa{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+  background-color:#EDF0EA;
+  height:100vh;
+  
+}
+.mobile{
+  background-color:#FFFFFF;
+  padding-top:64px;
+  padding-left:32px;
+  padding-right:32px;
+  border-radius:32px;
+  margin-top:16px;
+  width:414px;
+  
+  transition:ease-in 1s;
+  box-shadow:4px 10px 20px rgba(0,0,0,0.14);
+}
+
+.title{
+  font-weight:900;
+  font-size:40px;
+  color:#312D2C;
+}
+
+
+.energy{
+  background:#FF4729;
+  font-weight:700;
+  height:200px;
+  width:100%;
+  border-radius:26px;
+  margin-top:32px;
+}
+.header{
+  padding-top:32px;
+  padding-left:32px;
+  color:#FFFFFF;
+  font-size:16px;
+  font-weight:700;
+}
+.prot{
+  background-color:#FF9617;
+  height:100px;
+  border-radius:26px;
+  height:180px;
+}
+.fat{
+  background-color:#FFD34D;
+  height:150px;
+  border-radius:26px;
+  height:180px;
+}
+@media screen and (max-width:768px){
+  .fat{
+    margin-top:16px;
+  }
+}
+.percent{
+  font-size:28px;
+  margin-left:32px;
+  color:#ffffff;
+  font-weight:700;
+  margin-top:63px;
+}
+
+.row{
+  display:grid;
+}
+
+.product{
+  margin-top:32px;
+  margin-bottom:32px;
+}
+.name::before{
+  content: "\25CF ";
+  font-size:12px;
+  color:#FF4729;
+  padding-right:16px;
+  
+}
+.name{
+  padding-right:60px;
+  font-weight:700;
+  color:#4A4746;
+}
+
+.weight{
+  padding-right:45px;
+  color:#C9C9C9;
+  width:200px;
+}
+
+tr td{
+  padding-top:16px;
+}
+
+.val{
+  margin-top:32px;
+}
+.chart{
+  margin-top:32px;
+  display:flex;
+}
+
+.v1 {
+  border-left: 6px solid #fff;
+  height: 70px;
+  margin-left:32px; 
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+  border-bottom-left-radius:5px;
+  border-bottom-right-radius:5px;
+}
+.v2 {
+  border-left: 6px solid #fff;
+  height: 70px;
+  margin-top:16px;
+  margin-left:32px; 
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+  border-bottom-left-radius:5px;
+  border-bottom-right-radius:5px;
+}
+
+
+/*animatiomn*/
+
+@keyframes fadeInDown {
+    from {
+        opacity:0;
+        -webkit-transform: translatey(-10px);
+        -moz-transform: translatey(-10px);
+        -o-transform: translatey(-10px);
+        transform: translatey(-10px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatey(0);
+        -moz-transform: translatey(0);
+        -o-transform: translatey(0);
+        transform: translatey(0);
+    }
+}
+.in-down {
+    -webkit-animation-name: fadeInDown;
+    -moz-animation-name: fadeInDown;
+    -o-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -o-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+  animation-delay:0.8s;
+}
+
